@@ -1,5 +1,7 @@
 # Simple Calculator
 
-Just a simple calculator made with simple Javascript.
+<div align="center">
+  <p>Just a simple calculator made with simple Javascript.</p>
 
-![Picture of the app](./__docs__/screenshot.png)
+  <img src="./__docs__/screenshot.png">
+</div>
