@@ -4,9 +4,13 @@ function handleSubmit(event) {
   event.preventDefault();
   const $first = event.target.elements.first;
   const $second = event.target.elements.second;
-  const $operation = event.target.elements.operations.value;
+  const $operation = event.target.elements.operations;
   const $output = event.target.elements.result;
-  $output.innerText = returnOperation($first.value, $second.value, $operation);
+  $output.innerText = returnOperation(
+    $first.value,
+    $second.value,
+    $operation.value
+  );
 }
 
 function returnOperation(firstNumber, secondNumber, operationValue) {

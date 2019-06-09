@@ -4,24 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Calculator</title>
   </head>
   <body>
-    <form id="calculator">
-      <input type="number" step="0.01" name="first" id="first" />
-      <input type="number" step="0.01" name="second" id="second" />
-      <select name="operations">
-        <option value="sum">Sum</option>
-        <option value="rest">Rest</option>
-        <option value="multiply">Multiply</option>
-        <option value="divide">Divide</option>
-        <option value="square">Square root</option>
-        <option value="power">Power</option>
-      </select>
-      <input type="submit" value="Calculate" />
-      <output name="result"></output>
-    </form>
+    <nav>
+      <div class="nav-wrapper cyan darken-4">
+        <a href="" class="brand-logo center">Calculator</a>
+      </div>
+    </nav>
+
+    <div class="section center">
+      <h5>Simple calculator made with simple javascript</h5>
+      <p>
+        by
+        <a
+          class="teal-text text-darken-4"
+          href="https://github.com/cristianbgp"
+          target="blank"
+          >@cristianbgp</a
+        >
+      </p>
+    </div>
+    <div class="divider"></div>
+
+    <div class="container">
+      <form id="calculator">
+        <div class="input-field">
+          <input type="number" step="0.01" name="first" id="first" />
+          <label for="first">First Number</label>
+        </div>
+        <div class="input-field">
+          <input type="number" step="0.01" name="second" id="second" />
+          <label for="second">Second Number</label>
+        </div>
+        <div class="input-field">
+          <select name="operations">
+            <option value="sum">Sum</option>
+            <option value="rest">Rest</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+            <option value="square">Square</option>
+            <option value="power">Power</option>
+          </select>
+        </div>
+        <div class="center">
+          <input
+            class="waves-effect waves-light btn"
+            type="submit"
+            value="Calculate"
+          />
+        </div>
+        <div class="center section">
+          <output class="flow-text" name="result"></output>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="app.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
